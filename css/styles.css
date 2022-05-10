@@ -60,7 +60,7 @@ a, a:hover { /*design de textos com link*/
 }
 
 .DSMovie-card { /*design e tamanho do bloco dos cards*/
-    width: 360px; /*largura*/    
+    width: 100%; /*largura*/    
     border-radius: 8px;
 }
 
