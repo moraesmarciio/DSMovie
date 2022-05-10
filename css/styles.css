@@ -2,8 +2,9 @@
 
 :root { /*criando variaveis de cor*/
     --fundo-cinza: #E8E8E8;
+    --texto-cinza: #4a4a4a;
     --fundo-azul: #4D41C0;
-    --letras-brancas: #FFFFFF;
+    --branca: #FFFFFF;
 } 
 
 * {/*o asterisco representa toda a página*/
@@ -34,7 +35,7 @@ nav h1 { /*definando design do texto da barra de navegação*/
 
 header { /*barra superior (cabeçalho)*/
     background-color: var(--fundo-azul); /*Cor do fundo do cabeçalho*/
-    color: var(--letras-brancas); /*cor das letras do cabeçalho*/
+    color: var(--branca); /*cor das letras do cabeçalho*/
     height: 60px; /*tamanho*/
     display: flex; /*alinhamento*/
     align-items: center; /*alinhamento ao centro*/
@@ -52,4 +53,46 @@ a, a:hover { /*design de textos com link*/
 
 .DSmovie-contact-container img { /*criando margem para toda imagem que estiver dentro desse container*/
     margin-right: 10px;
+}
+
+#DSMovie-card-lisyt { /*bloco de cards*/
+    padding: 40px 0px; /*espaçamento interno*/
+}
+
+.DSMovie-card { /*design e tamanho do bloco dos cards*/
+    width: 360px; /*largura*/    
+    border-radius: 8px;
+}
+
+.DSMovie-card img {
+    width: 100%; /*Largura da imagem*/
+    border-radius: 8px 8px 0 0;
+}
+
+.DSMovie-card-description {
+    background-color: var(--branca); /*cor do fundo*/
+    border-radius: 0px 0px 8px 8px;
+    padding: 10px 0 20px 0;
+    display: flex; /*alinhamento*/
+    flex-direction: column; /*alinhamento em coluna*/
+    align-items: center;
+}
+
+.DSMovie-card-description h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.DSMovie-btn, DSMovie-btn :hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--fundo-azul);
+    color: var(--branca);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
