@@ -1,24 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
-* {
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-html, body {
-    background-color: #E8E8E8;
+:root { /*criando variaveis de cor*/
+    --fundo-cinza: #E8E8E8;
+    --fundo-azul: #4D41C0;
+    --letras-brancas: #FFFFFF;
+} 
+
+* {/*o asterisco representa toda a página*/
+    box-sizing: border-box;  /*borda*/
+    font-family: 'Open Sans', sans-serif; /*definando qual será a fonte do texto*/
 }
 
-nav{
+h1, h2, h3, h4, h5, h6 { /*tirando margens colocadas automaticamento pelo bootstrap*/
+    margin: 0;
+}
+
+html, body {
+    background-color: var(--fundo-cinza); /*cor do fundo*/
+}
+
+nav { /*barra de navegação*/
+    display: flex; /*botando os texto lado a lado*/
+    align-items: center; /*centralizando textos*/
+    justify-content: space-between; /*alinhando textos maiores com textos meneros (centralizando)*/
+
+}
+
+nav h1 { /*definando design do texto da barra de navegação*/
+    font-size: 24px; /*tamanho do texto*/
+    font-weight: 700; /*peso do texto*/
+
+}
+
+header { /*barra superior (cabeçalho)*/
+    background-color: var(--fundo-azul); /*Cor do fundo do cabeçalho*/
+    color: var(--letras-brancas); /*cor das letras do cabeçalho*/
+    height: 60px; /*tamanho*/
+    display: flex; /*alinhamento*/
+    align-items: center; /*alinhamento ao centro*/
+}
+
+a, a:hover { /*design de textos com link*/
+    text-decoration: none; /*tirando decoração do texto (sublinhados, etc)*/
+    color: unset; /*texto sem cor definida (branco por padrão)*/
+}
+
+.DSmovie-contact-container { /*designe container (div DSmovie-contact-container no html)*/
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-header {
-    background-color: #4D41C0;
-    color: #FFFFFF;
 }
 
-a, a:hover {
-    text-decoration: none;
-    color: unset;
+.DSmovie-contact-container img { /*criando margem para toda imagem que estiver dentro desse container*/
+    margin-right: 10px;
 }
