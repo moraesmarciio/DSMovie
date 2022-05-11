@@ -6,6 +6,7 @@
     --fundo-azul: #4D41C0;
     --branca: #FFFFFF;
     --texto-cinza-claro: #aaa;
+    --texto-amarelo: #FFBB3A;
 } 
 
 * {/*o asterisco representa toda a página*/
@@ -78,7 +79,7 @@ a, a:hover { /*design de textos com link*/
     flex-direction: column; /*alinhamento em coluna*/
     justify-content: space-between; /*alinhando nos limites do card*/
     align-items: center;
-    min-height: 150px;
+    height: 220px;
 }
 
 .DSMovie-card-description h3 {
@@ -86,6 +87,31 @@ a, a:hover { /*design de textos com link*/
     font-weight: 700;
     margin-bottom: 25px;
     text-align: center;
+}
+
+.DSMovie-card-description-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2px;
+}
+
+.DSMovie-card-description-bottom h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--texto-amarelo);
+}
+
+.DSMovie-card-description-bottom p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--texto-cinza-claro);
+    margin-bottom: 10px;
+}
+
+.DSMovie-card-description-bottom img {
+    width: 22px;
+    height: 20.9px;
 }
 
 .DSMovie-btn, DSMovie-btn :hover{
