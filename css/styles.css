@@ -58,7 +58,7 @@ a, a:hover { /*design de textos com link*/
 }
 
 #DSMovie-card-lisyt { /*bloco de cards*/
-    padding: 40px 0px; /*espaçamento interno*/
+    padding: 40px 10px; /*espaçamento interno*/
 }
 
 .DSMovie-card { /*design e tamanho do bloco dos cards*/
@@ -79,13 +79,13 @@ a, a:hover { /*design de textos com link*/
     flex-direction: column; /*alinhamento em coluna*/
     justify-content: space-between; /*alinhando nos limites do card*/
     align-items: center;
-    height: 220px;
+    height: 190px;
 }
 
 .DSMovie-card-description h3 {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
