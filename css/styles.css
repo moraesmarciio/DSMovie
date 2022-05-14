@@ -58,7 +58,7 @@ a, a:hover { /*design de textos com link*/
 }
 
 #DSMovie-card-lisyt { /*bloco de cards*/
-    padding: 40px 10px; /*espaçamento interno*/
+    padding: 0 10px; /*espaçamento interno*/
 }
 
 .DSMovie-card { /*design e tamanho do bloco dos cards*/
@@ -170,4 +170,51 @@ a, a:hover { /*design de textos com link*/
     justify-content: space-between;
 }
 
+.DSMovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.DSMovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DSMovie-pagination-box p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--fundo-azul);
+    margin: 0;
+}
+
+.DSMovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--fundo-azul);
+    border-radius: 4px;
+    background-color: var(--branca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DSMovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(30%) sepia(19%) saturate(5462%) hue-rotate(227deg) brightness(87%) contrast(95%);
+}
+
+
+.DSMovie-pagination-box button:disabled {
+    border: 1px solid var(--texto-cinza-claro);
+}
+
+.DSMovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.DSMovie-flip-horizontal {
+    transform: rotate(180deg); /*rotacionando imagem*/
+}
 
