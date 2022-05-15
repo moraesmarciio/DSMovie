@@ -207,7 +207,7 @@ a, a:hover { /*design de textos com link*/
 
 
 .DSMovie-pagination-box button:disabled {
-    border: 1px solid var(--texto-amarelo);
+    border: 1px solid var(--texto-cinza-claro);
 }
 
 .DSMovie-pagination-box button:disabled img {
